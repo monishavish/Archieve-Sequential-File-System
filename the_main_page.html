@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<title>Admin modification page</title>
+<style type="text/css">
+	.dropdown{
+		position: absolute;
+		left:91%;
+	}
+	.sp{
+		position: absolute;
+		top:4%;
+		left:84%;
+		font-size:20px;
+	}
+	.dropbtn{
+		background-color:transparent;
+		position: absolute;
+		border-style: solid;
+		border-width: 2px;
+		border-right-width:2px;
+		border-top-width: 2px;
+		padding-right: 12px;
+		padding-left: 12px;
+		padding-top: 0.2px;
+		padding-bottom: 3px;
+		border-radius: 7px;
+		border-color:black;
+		font-size: 20px;
+
+	}
+	.dropdown{
+		position:relative;
+		display: inline-block;
+		margin-top: 1.2%;
+	}
+	.dropcontent{
+		display:none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 50px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+		z-index: 1;
+	}
+	.dropcontent a{
+		color:black;
+		padding:12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropcontent a:hover{background:-color:#ddd;}
+	.dropdown:hover .dropcontent{display:block;}
+	.dropdown:hover .dropbtn{background-color:#3e8e41; }
+	.arrow{
+		border:solid black;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding:3px;
+	}
+	.down{
+		-webkit-transform:rotate(45deg);
+	}
+	a{
+		text-decoration: none;
+		font-color:black;
+		font-family: 'Quicksand', sans-serif;
+	}
+
+
+
+
+</style>
+
+
+
+<body>
+		<div class="txt">
+		<span class="sp"><em>Hello User!</em></span>
+		<div class="dropdown">
+			<button class="dropbtn"><i class="arrow down"></i></button>
+				<div class="dropcontent">
+					
+					<a href="logout.php"><em>Logout</em></a>
+				</div>
+			</div>
+	</div>
+
+
+</body>

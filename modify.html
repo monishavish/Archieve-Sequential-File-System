@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<title>Admin modification page</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"><style type="text/css">
+	body,html{
+		background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:45em;
+		width:94.5em;
+
+	}
+	.div1{
+		background: transparent;
+		border-style: solid;
+		border-color: white;
+		border-radius: 10px;
+		width:15em;
+		height:15em;
+		position:absolute;
+		left:30%;
+		top:30%;
+	}
+		.div2{
+		background: transparent;
+		border-style: solid;
+		border-color: white;
+		border-radius: 10px;
+		width:15em;
+		height:15em;
+		position:absolute;
+		left:50%;
+		top:30%;
+	}
+		.div3{
+		background: transparent;
+		border-style: solid;
+		border-color: white;
+		border-radius: 10px;
+		width:15em;
+		height:15em;
+		position:absolute;
+		left:30%;
+		top:60%;
+	}
+
+		.div4{
+		background: transparent;
+		border-style: solid;
+		border-color: white;
+		border-radius: 10px;
+		width:15em;
+		height:15em;
+		position:absolute;
+		left:50%;
+		top:60%;
+	}
+	.txt1{
+		position: absolute;
+		left:43%;
+		top:20%;
+		font-size:20px;
+	}
+	h2{
+		margin-top: 1.8em;
+		text-align: center;
+		font
+	}
+	h3{
+		text-align: center;
+		color: black;
+	}
+	.dropdown{
+		position: absolute;
+		left:91%;
+	}
+	.sp{
+		position: absolute;
+		top:4%;
+		left:87%;
+		font-size:20px;
+	}
+	.dropbtn{
+		background-color:transparent;
+		position: absolute;
+		border-style: solid;
+		border-width: 2px;
+		border-right-width:2px;
+		border-top-width: 2px;
+		padding-right: 12px;
+		padding-left: 12px;
+		padding-bottom: 3px;
+		border-radius: 7px;
+		border-color:white;
+
+	}
+	.dropdown{
+		position:relative;
+		display: inline-block;
+		margin-top: 1.2%;
+	}
+	.dropcontent{
+		display:none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 50px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+		z-index: 1;
+	}
+	.dropcontent a{
+		color:black;
+		padding:12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropcontent a:hover{background:-color:#ddd;}
+	.dropdown:hover .dropcontent{display:block;}
+	.dropdown:hover .dropbtn{background-color:#3e8e41; }
+	.arrow{
+		border:solid black;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding:3px;
+	}
+	.down{
+		-webkit-transform:rotate(45deg);
+	}
+	a{
+		text-decoration: none;
+		font-color:black;
+		font-family: 'Quicksand', sans-serif;
+	}
+</style>
+
+
+
+
+
+<body>
+	<div class="txt">
+		<span class="sp"><em>Hello!</em></span>
+		<div class="dropdown">
+			<button class="dropbtn"><i class="arrow down"></i></button>
+				<div class="dropcontent">
+					<a href="logout.php"><em>Logout</em></a>
+				</div>
+			</div>
+	</div>
+	<div class="txt1">
+		<span><em>Modification options:</span></em>
+	</div>
+	<div class="div1">
+		<br>
+		<h2><em>Insert</em></h2>
+		<a href="http://localhost/Project/modal-insert-stu.php"><h3>Student Achivement</h3></a>
+		<a href="http://localhost/Project/modal-insert-prof.php"><h3>Professor Achivement</h3></a>
+	</div>
+	<div class="div2">
+		<br>
+		<h2><em>Update</em></h2>
+		<a href="http://localhost/Project/modal-update-stu.php"><h3>Student Achivement</h3></a>
+		<a href="http://localhost/Project/modal-update-prof.php"><h3>Professor Achivement</h3></a>
+	</div>
+	<div class="div3">
+		<br>
+		<h2><em>Display</em></h2>
+		<a href="http://localhost/Project/modal-display-stu.php"><h3>Student Achivement</h3></a>
+		<a href="http://localhost/Project/modal-display-prof.php"><h3>Professor Achivement</h3></a>
+	</div>
+	<div class="div4">
+		<br>
+		<em><h2>Delete</h2></em>
+		<a href="http://localhost/Project/modal-delete-stu.php"><h3>Student Achievement</h3></a>
+		<a href="http://localhost/Project/modal-delete-prof.php"><h3>Professor Achievement</h3></a>
+	</div>
+</body>

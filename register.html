@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+	<title>Register</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+		
+<style>
+	body,html{
+		background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:53.5em;
+		width:108.4em;
+
+	}
+	h1{
+		font-family: 'Chelsea Market', cursive;
+		text-align: left;
+		position: absolute;
+		left:1.5em;
+	}
+	.container
+		{
+			text-align:left;
+			position:absolute;
+			top: 7em;
+			width:50em;
+		}
+		
+
+	button{
+		background: transparent;
+  		border-style: solid;
+  		border-color:white;
+  		border-radius: 10px;
+  		color: black;
+  		padding: 10px 30px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+	}
+	.but{
+		position: absolute;
+		left:95em;
+	}
+	.ssubmit{
+		background: transparent;
+   		border-style: solid;
+  		border-color:white;
+  		border-radius: 10px;
+  		color: black;
+  		padding: 10px 30px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 20px;
+
+	}
+	img{
+		width:39em;
+		position: absolute;
+		left:70em;
+		height:53.5em;
+	}
+	select{
+		background: transparent;
+  		border-style: solid;
+  		border-color:white;
+  		border-radius: 10px;
+  		padding: 7px 25px;
+	}
+</style>
+
+
+
+<body>
+
+		<form method="post" action="credentials.php">
+		<h1 >Register</h1>
+		<div class="container">
+			<label for="status">Register As:</label>
+				<select name="status1" id="status">
+  						<option value="professor">Pofessor</option>
+  						<option value="student">Student</option>
+  				</select><br><br>
+			<input type="text" class="form-control" name="name" placeholder="Enter name" required="Please enter" /><br>
+			<input type="text" class="form-control" name="id" placeholder="Enter id" required /><br>
+			<input type="email" class="form-control" name="email" placeholder="Enter E-mail" required /><br>
+			<input type="text" class="form-control" name="deptid" placeholder="Enter department id" required /><br>
+			<a class="idd" href="http://localhost/Project/know_deptid.php"><button type="button" class="buttonn">( Know Your Department ID. )</button></a>
+			<br><br>
+			<input type="text" class="form-control" name="contact" placeholder="Enter contact" required /><br>
+			<input type="password" class="form-control" name="password" placeholder="Enter password" required/><br><br>
+            <input type="submit" class="ssubmit" name="submit" value="Register"><br><br><br><br><br>
+            <a  href="http://localhost/Project/index.html"><button type="button" class="but"><b>Back to Home</b></button></a>
+        </div>
+    </form>
+			
+</body>

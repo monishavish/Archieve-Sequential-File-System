@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<title>LOGIN</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+		body,html{
+		background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height:51.3em;
+
+	}
+	select{
+		background: transparent;
+  		border-style: solid;
+  		border-color:black;
+  		border-radius: 10px;
+  		padding: 7px 25px;
+	}
+	div{
+		position: absolute;
+		top:15%;
+		left:35%;
+		background-color: white;
+		border-style:solid;
+		border-color:white;
+		border-radius:20px;
+		width:30em;
+		text-align:center;
+
+	}
+	h2{
+		position: absolute;
+		top:2%;
+		left:44%;
+		text-decoration: underline dotted;
+	}
+</style>
+
+
+
+
+<body>
+
+		<h2>User login</p></h2>
+		<div classs="pos">
+
+		<form action="login2.php" method="post">
+			<br><br>
+			<p>Login As:  </p>
+				<select name="status1" id="status">
+  						<option value="professor">Pofessor</option>
+  						<option value="student">Student</option>
+  						<option value="admin">Admin</option>
+  				</select><br><br><br>
+			<p>EMAIL</p>
+			<input type="email" name="EMAIL" placeholder="Enter your email" required size="30"  style="border-radius:5px;padding:4px 15px;border-width:1px;border-color:black;"><br><br><br><br>
+			<p>PASSWORD</p>
+			<input type="password" name="PASSWORD" placeholder="Enter your password" required size="30" style="border-radius:5px;padding:4px 15px;border-width:1px;border-color:black;"><br><br><br><br>
+			<input type="submit" name="" value="LOGIN"><br><br><br>
+			<a href="register.html" style="color:black">Don't have an account?? click here!!</a><br><br>
+			<a href="http://localhost/Project/index.html" style="color:black">Back to Home</a>
+		</form>
+		</div>
+</body>
+</html>
+document.write("Text entered :"+"<br>");
+		document.write(textt +"<br>");
+		document.write("<br>")
+		document.write("<br>")
+		document.write("Radio buttion selected :"+"<br>");
+		document.write(selectedOption+"<br>");
+		document.write("<br>")
+		document.write("<br>")
+		document.write("Drop down option selected :"+"<br>");
+		document.write(status+"<br>");

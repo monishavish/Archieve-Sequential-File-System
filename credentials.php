@@ -1,0 +1,133 @@
+<?php
+$n=$_POST['name'];
+$i=$_POST['id'];
+$depid=$_POST['deptid'];
+$email=$_POST['email'];
+$con=$_POST['contact'];
+$pass=$_POST['password'];
+$sel=$_POST['status1'];
+
+$string=strval($sel);
+
+
+if(strcmp($string,"professor")==0){
+		if(file_exists("professor_register_details.txt")){
+			$file1=fopen("professor_register_details.txt","a+");
+			fwrite($file1,$i);
+			fwrite($file1,"|");
+			fwrite($file1,$n);
+			fwrite($file1,"|");
+			fwrite($file1,$depid);
+			fwrite($file1,"|");
+			fwrite($file1,$email);
+			fwrite($file1,"|");
+			fwrite($file1,$con);
+			fwrite($file1,"|");
+			fwrite($file1,$pass);
+			fwrite($file1,"|");
+			fwrite($file1,$sel);
+			fwrite($file1,"#\n");
+			fclose($file1);
+		}
+		else{
+			$file1=fopen("professor_register_details.txt","w");
+			fwrite($file1,$i);
+			fwrite($file1,"|");
+			fwrite($file1,$n);
+			fwrite($file1,"|");
+			fwrite($file1,$depid);
+			fwrite($file1,"|");
+			fwrite($file1,$email);
+			fwrite($file1,"|");
+			fwrite($file1,$con);
+			fwrite($file1,"|");
+			fwrite($file1,$pass);
+			fwrite($file1,"|");
+			fwrite($file1,$sel);
+			fwrite($file1,"#\n");
+			fclose($file1);
+		}
+		goto a;
+	}
+if(strcmp($string,"student")==0){
+		if(file_exists("student_register_details.txt")){
+			$file1=fopen("student_register_details.txt","a+");
+			fwrite($file1,$i);
+			fwrite($file1,"|");
+			fwrite($file1,$n);
+			fwrite($file1,"|");
+			fwrite($file1,$depid);
+			fwrite($file1,"|");
+			fwrite($file1,$email);
+			fwrite($file1,"|");
+			fwrite($file1,$con);
+			fwrite($file1,"|");
+			fwrite($file1,$pass);
+			fwrite($file1,"|");
+			fwrite($file1,$sel);
+			fwrite($file1,"#\n");
+			fclose($file1);
+		}
+		else{
+			$file1=fopen("student_register_details.txt","w");
+			fwrite($file1,$i);
+			fwrite($file1,"|");
+			fwrite($file1,$n);
+			fwrite($file1,"|");
+			fwrite($file1,$depid);
+			fwrite($file1,"|");
+			fwrite($file1,$email);
+			fwrite($file1,"|");
+			fwrite($file1,$con);
+			fwrite($file1,"|");
+			fwrite($file1,$pass);
+			fwrite($file1,"|");
+			fwrite($file1,$sel);
+			fwrite($file1,"#\n");
+			fclose($file1);
+		}
+		goto b;
+	}
+
+a: if(strcmp($string,"professor")==0){
+	if(file_exists("professor_credentials.txt")){
+			$file1=fopen("professor_credentials.txt","a+");
+			fwrite($file1,$email);
+			fwrite($file1,"|");				
+			fwrite($file1,$pass);
+			fwrite($file1,"#\n");
+			fclose($file1);
+	}
+	else{
+			$file1=fopen("professor_credentials.txt","w");
+			fwrite($file1,$email);
+			fwrite($file1,"|");				
+			fwrite($file1,$pass);
+			fwrite($file1,"#\n");
+			fclose($file1);
+	}
+}
+
+
+b:  if(strcmp($string,"student")==0){
+	if(file_exists("student_credentials.txt")){
+			$file1=fopen("student_credentials.txt","a+");
+			fwrite($file1,$email);
+			fwrite($file1,"|");				
+			fwrite($file1,$pass);
+			fwrite($file1,"#\n");
+			fclose($file1);
+	}
+	else{
+			$file1=fopen("student_credentials.txt","w");
+			fwrite($file1,$email);
+			fwrite($file1,"|");				
+			fwrite($file1,$pass);
+			fwrite($file1,"#\n");
+			fclose($file1);
+	}
+}
+header("Location:http://localhost/Project/register.html")
+?>
+
+
